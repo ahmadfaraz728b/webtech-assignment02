@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+
+body {
+    background-color: #fff4e6;
+}
+
+#editor-page {
+    display: flex;
+    height: 100vh;
+}
+
+.half {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #2e7d32;
+    background-color: white;
+}
+
+.half h2 {
+    text-align: center;
+    padding: 10px;
+    color: #2e7d32;
+    font-family: Georgia, serif;
+}
+
+#text-box {
+    flex-grow: 1;
+    margin: 10px;
+    padding: 10px;
+    resize: none;
+    font-size: 16px;
+    font-family: "Courier New", monospace;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#slide-box {
+    flex-grow: 1;
+    margin: 10px;
+    padding: 10px;
+    border: 2px dashed #ef6c00;
+    border-radius: 5px;
+    overflow: auto;
+    font-family: Georgia, serif;
+}
+
+.buttons {
+    text-align: center;
+    margin: 10px;
+}
+
+button {
+    padding: 8px 15px;
+    margin: 3px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2e7d32;
+    color: white;
+    cursor: pointer;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+#slide-number,
+#present-number {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ef6c00;
+}
+
+#present-page {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fffde7;
+}
+
+#present-box {
+    flex-grow: 1;
+    padding: 40px;
+    font-size: 24px;
+    overflow: auto;
+    font-family: Georgia, serif;
+}
