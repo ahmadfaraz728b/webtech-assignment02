@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Slides App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="editor-page">
+
+        <div class="half">
+            <h2>Write Here</h2>
+            <textarea id="text-box"></textarea>
+            <div class="buttons">
+                <button id="save-button">Save</button>
+                <button id="present-button">Present</button>
+            </div>
+        </div>
+
+        <div class="half">
+            <h2>Slide</h2>
+            <div id="slide-box"></div>
+            <div class="buttons">
+                <button id="left-button">Left</button>
+                <button id="right-button">Right</button>
+                <button id="full-button">Full Screen</button>
+            </div>
+            <p id="slide-number">1 / 1</p>
+        </div>
+
+    </div>
+
+    <div id="present-page">
+        <div id="present-box"></div>
+        <div class="buttons">
+            <button id="present-left-button">Left</button>
+            <button id="present-right-button">Right</button>
+            <button id="present-full-button">Exit Full Screen</button>
+        </div>
+        <p id="present-number">1 / 1</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
